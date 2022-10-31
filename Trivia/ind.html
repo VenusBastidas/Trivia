@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icono pestaña -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/3163/3163478.png"
+      type="image/png"
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!-- efecto css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Trivia</title>
+  </head>
+  <body>
+    <header id="header">
+      <h3>Instrucciones</h3>
+      <p>Elige la respuesta correcta y</p>
+      <!-- boton -->
+      <input type="submit" value="Gana!!" id="gana" onclick="draw()" />
+    </header>
+    <main>
+      <canvas id="canvas"></canvas>
+      <div id="img"></div>
+      <div id="preguntas"></div>
+      <div id="respuestas"></div>
+      <div id="resultado" class="animate__pulse"></div>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin:0;
+  }
+  body {
+    /*google fonts*/
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #16161e;
+    /*imagen de fondo*/
+    background: url("https://wallpaperaccess.com/full/3968016.png");
+    /*propiedades imagen de fondo*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*alinear elementos*/
+    display: flex;
+    flex-direction: column;
+    /*y*/
+    justify-content: center;
+    /*x*/
+    align-items: center;
+    text-align: center;
+    }
+  header{
+    margin-top: 10vh;
+  }
+  h3{
+    /*google fonts*/
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    /*medidas*/
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: #f6a94e;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+  }
+  /*boton*/
+    #gana{
+      font-family: 'Lobster', cursive;
+      /*margen interno*/
+      padding: 1rem;
+      /*color letra*/
+      color: #ffff;
+      /*color fondo*/
+      background-color: #7e221b;
+      /*esquinas redondas*/
+      border-radius: 50px;
+      border: none;
+      /*tiempo de espera*/
+      transition: 100ms;
+    }
+  /*pasa el mouse sobre el boton*/
+  #gana:hover{
+    background-color: #f6a94e;
+    color: #16161e;
+    transform: scale(1.1);
+    font-weight: bolder;
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: #f6a94e;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+  }
+/*main{
+  margin-top: -15vh;
+}*/
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;;
+  }
